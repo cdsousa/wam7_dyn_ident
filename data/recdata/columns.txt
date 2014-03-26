@@ -1,0 +1,1 @@
+time(secs), q1(rads), ..., q7, tau1(Nm), ..., tau7
