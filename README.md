@@ -1,7 +1,9 @@
-Experimental WAM Robot Dynamic Identification with LMI
-======================================================
+Experimental Identification of Physically Feasible Dynamic Parameters of the 7-link WAM™ Robot using LMI–SDP Techniques
+=======================================================================================================================
 
-*Experimental Identification of Physically Feasible Dynamic Parameters of the 7-link WAM™ Robot using LMI/SDP*
+*Experimental code and data associated with the paper:*
+
+**Cristóvão D. Sousa and Rui Cortesão, "Physical feasibility of robot base inertial parameter identification: A linear matrix inequality approach," The International Journal of Robotics Research, vol. 33, no. 6, pp. 931–944, May. 2014, doi: [10.1177/0278364913514870](http://dx.doi.org/10.1177/0278364913514870)**
 
 
 ------------------------
