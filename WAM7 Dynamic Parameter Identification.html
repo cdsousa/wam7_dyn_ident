@@ -1277,6 +1277,7 @@ a .icon-rotate-90:before,a .icon-rotate-180:before,a .icon-rotate-270:before,a .
 .icon-weibo:before{content:"\f18a"}
 .icon-renren:before{content:"\f18b"}
 code{color:#000}
+pre{font-size:inherit;line-height:inherit}
 .border-box-sizing{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
 .corner-all{border-radius:4px}
 .hbox{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;display:flex;flex-direction:row;align-items:stretch}
@@ -1340,6 +1341,8 @@ input.nbname_input,input.engine_num_input{padding-top:3px;padding-bottom:3px;hei
 input.engine_num_input{width:60px}
 .highlight_text{color:#00f}
 #project_name>.breadcrumb{padding:0;margin-bottom:0;background-color:transparent;font-weight:bold}
+.folder_icon:before{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em;content:"\f114"}
+.notebook_icon:before{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;*margin-right:.3em;content:"\f02d"}
 .ansibold{font-weight:bold}
 .ansiblack{color:#000}
 .ansired{color:#8b0000}
@@ -1362,12 +1365,12 @@ div.cell.edit_mode{border-radius:4px;border:thin #008000 solid}
 div.cell{width:100%;padding:5px 5px 5px 0;margin:0;outline:none}
 div.prompt{min-width:11ex;padding:.4em;margin:0;font-family:monospace;text-align:right;line-height:1.21429em}
 @media (max-width:480px){div.prompt{text-align:left}}div.inner_cell{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
-div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7}
+div.input_area{border:1px solid #cfcfcf;border-radius:4px;background:#f7f7f7;line-height:1.21429em}
 div.prompt:empty{padding-top:0;padding-bottom:0}
 div.input{page-break-inside:avoid;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;display:flex;flex-direction:row;align-items:stretch}
 @media (max-width:480px){div.input{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}}div.input_prompt{color:#000080;border-top:1px solid transparent}
 div.input_area>div.highlight{margin:.4em;border:none;padding:0;background-color:transparent}
-div.input_area>div.highlight>pre{margin:0;border:0;padding:0;background-color:transparent;font-size:14px;line-height:1.21429em}
+div.input_area>div.highlight>pre{margin:0;border:none;padding:0;background-color:transparent}
 .CodeMirror{line-height:1.21429em;height:auto;background:none;}
 .CodeMirror-scroll{overflow-y:hidden;overflow-x:auto}
 @-moz-document url-prefix(){.CodeMirror-scroll{overflow-x:hidden}}.CodeMirror-lines{padding:.4em}
@@ -1405,7 +1408,7 @@ div.output_area{padding:0;page-break-inside:avoid;display:-webkit-box;-webkit-bo
 div.output_area .rendered_html table{margin-left:0;margin-right:0}
 div.output_area .rendered_html img{margin-left:0;margin-right:0}
 .output{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}
-@media (max-width:480px){div.output_area{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}}div.output_area pre{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;color:#000;background-color:transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;line-height:inherit}
+@media (max-width:480px){div.output_area{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:vertical;-moz-box-align:stretch;display:box;box-orient:vertical;box-align:stretch;display:flex;flex-direction:column;align-items:stretch}}div.output_area pre{margin:0;padding:0;border:0;vertical-align:baseline;color:#000;background-color:transparent;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
 div.output_subarea{padding:.4em .4em 0 .4em;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
 div.output_text{text-align:left;color:#000;line-height:1.21429em}
 div.output_stderr{background:#fdd;}
@@ -1526,7 +1529,7 @@ ul#help_menu li a{overflow:hidden;padding-right:2.2em}ul#help_menu li a i{margin
 .notification_widget{color:#777;padding:1px 12px;margin:2px 4px;z-index:10;border:1px solid #ccc;border-radius:4px;background:rgba(240,240,240,0.5)}.notification_widget.span{padding-right:2px}
 div#pager_splitter{height:8px}
 #pager-container{position:relative;padding:15px 0}
-div#pager{font-size:14px;line-height:20px;overflow:auto;display:none}div#pager pre{font-size:13px;line-height:1.21429em;color:#000;background-color:#f7f7f7;padding:.4em}
+div#pager{font-size:14px;line-height:20px;overflow:auto;display:none}div#pager pre{line-height:1.21429em;color:#000;background-color:#f7f7f7;padding:.4em}
 .quickhelp{display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-align:stretch;display:-moz-box;-moz-box-orient:horizontal;-moz-box-align:stretch;display:box;box-orient:horizontal;box-align:stretch;display:flex;flex-direction:row;align-items:stretch}
 .shortcut_key{display:inline-block;width:20ex;text-align:right;font-family:monospace}
 .shortcut_descr{display:inline-block;-webkit-box-flex:1;-moz-box-flex:1;box-flex:1;flex:1}
@@ -1678,6 +1681,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="experimental-identification-of-physically-feasible-dynamic-parameters-of-the-7-link-wam-robot-using-lmi-sdp-techniques">Experimental Identification of Physically Feasible Dynamic Parameters of the 7-link WAM™ Robot using LMI–SDP Techniques</h1>
+<p><a href="http://dx.doi.org/10.5281/zenodo.10537"><img src="https://zenodo.org/badge/920/cdsousa/wam7_dyn_ident.png" alt="DOI"></a></p>
 <p><em>Experimental code and data associated with the paper:</em></p>
 <p><strong>Cristóvão D. Sousa and Rui Cortesão, &quot;Physical feasibility of robot base inertial parameter identification: A linear matrix inequality approach,&quot; The International Journal of Robotics Research, vol. 33, no. 6, pp. 931–944, May. 2014, doi: <a href="http://dx.doi.org/10.1177/0278364913514870">10.1177/0278364913514870</a></strong></p>
 <hr>
@@ -1748,7 +1752,7 @@ In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">datafolder</span> <span class="o">=</span> <span class="s">&#39;data/&#39;</span>
+<div class=" highlight hl-ipython"><pre><span class="n">datafolder</span> <span class="o">=</span> <span class="s">&#39;data/&#39;</span>
 <span class="n">tmpfolder</span> <span class="o">=</span> <span class="s">&#39;tmp/&#39;</span>
 </pre></div>
 
@@ -1764,7 +1768,7 @@ In&nbsp;[274]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">init_printing</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">init_printing</span>
 <span class="n">init_printing</span><span class="p">()</span>
 
 <span class="o">%</span><span class="k">pylab</span> <span class="n">inline</span>
@@ -1807,7 +1811,7 @@ In&nbsp;[26]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">sympybotics</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">sympybotics</span>
 </pre></div>
 
 </div>
@@ -1831,7 +1835,7 @@ In&nbsp;[27]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">rbtdef</span> <span class="o">=</span> <span class="n">sympybotics</span><span class="o">.</span><span class="n">RobotDef</span><span class="p">(</span><span class="s">&quot;WAM Arm 7 DOF&quot;</span><span class="p">,</span>
+<div class=" highlight hl-ipython"><pre><span class="n">rbtdef</span> <span class="o">=</span> <span class="n">sympybotics</span><span class="o">.</span><span class="n">RobotDef</span><span class="p">(</span><span class="s">&quot;WAM Arm 7 DOF&quot;</span><span class="p">,</span>
             <span class="p">[(</span><span class="s">&quot;-pi/2&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;q&quot;</span><span class="p">),</span>
              <span class="p">(</span><span class="s">&quot;pi/2&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;q&quot;</span><span class="p">),</span>
              <span class="p">(</span><span class="s">&quot;-pi/2&quot;</span><span class="p">,</span> <span class="mf">0.045</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="s">&quot;q&quot;</span><span class="p">),</span>
@@ -1866,7 +1870,7 @@ In&nbsp;[28]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="o">%</span><span class="k">time</span> <span class="n">rbt</span> <span class="o">=</span> <span class="n">sympybotics</span><span class="o">.</span><span class="n">RobotDynCode</span><span class="p">(</span><span class="n">rbtdef</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="o">%</span><span class="k">time</span> <span class="n">rbt</span> <span class="o">=</span> <span class="n">sympybotics</span><span class="o">.</span><span class="n">RobotDynCode</span><span class="p">(</span><span class="n">rbtdef</span><span class="p">)</span>
 <span class="o">%</span><span class="k">time</span> <span class="n">rbt</span><span class="o">.</span><span class="n">calc_base_parms</span><span class="p">()</span>
 </pre></div>
 
@@ -1901,7 +1905,7 @@ In&nbsp;[29]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pickle</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">pickle</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span> <span class="n">rbt</span><span class="p">,</span> <span class="nb">file</span> <span class="p">)</span>
 </pre></div>
@@ -1927,7 +1931,7 @@ In&nbsp;[30]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pickle</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">pickle</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">rbt</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">file</span> <span class="p">)</span>
 </pre></div>
@@ -1944,7 +1948,7 @@ In&nbsp;[31]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">n_dynparms</span><span class="p">,</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">n_base</span>
+<div class=" highlight hl-ipython"><pre><span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">n_dynparms</span><span class="p">,</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">n_base</span>
 </pre></div>
 
 </div>
@@ -1978,7 +1982,7 @@ In&nbsp;[275]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">baseparms</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
+<div class=" highlight hl-ipython"><pre><span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">baseparms</span><span class="o">.</span><span class="n">n</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -2019,7 +2023,7 @@ In&nbsp;[52]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pickle</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">pickle</span>
 <span class="kn">import</span> <span class="nn">sympybotics</span>
 <span class="kn">import</span> <span class="nn">numpy</span>
 </pre></div>
@@ -2036,7 +2040,7 @@ In&nbsp;[53]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+<div class=" highlight hl-ipython"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">rbt</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">file</span> <span class="p">)</span>
 </pre></div>
 
@@ -2061,7 +2065,7 @@ In&nbsp;[276]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">parms_traj</span> <span class="o">=</span> <span class="s">&#39;traj1&#39;</span>
+<div class=" highlight hl-ipython"><pre><span class="n">parms_traj</span> <span class="o">=</span> <span class="s">&#39;traj1&#39;</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span>  <span class="s">&#39;trajectories/</span><span class="si">%s</span><span class="s">_shwfl_abq0.pkl&#39;</span><span class="o">%</span><span class="k">parms_traj</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">s_h_wf_l</span><span class="p">,</span> <span class="n">a_b_q0</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
@@ -2079,7 +2083,7 @@ In&nbsp;[277]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">h</span> <span class="o">=</span> <span class="mf">0.001</span>
+<div class=" highlight hl-ipython"><pre><span class="n">h</span> <span class="o">=</span> <span class="mf">0.001</span>
 <span class="n">decimate</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">h_plot</span> <span class="o">=</span> <span class="n">h</span><span class="o">*</span><span class="n">decimate</span>
 
@@ -2104,7 +2108,7 @@ In&nbsp;[278]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">si</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">h_plot</span>
+<div class=" highlight hl-ipython"><pre><span class="n">si</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">h_plot</span>
 <span class="n">sf</span> <span class="o">=</span> <span class="n">si</span> <span class="o">+</span> <span class="mi">20</span><span class="o">/</span><span class="n">h_plot</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">sf</span><span class="o">-</span><span class="n">si</span><span class="p">)</span> <span class="o">*</span> <span class="n">h_plot</span>
 </pre></div>
@@ -2121,7 +2125,7 @@ In&nbsp;[279]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rbt</span><span class="o">.</span><span class="n">dof</span><span class="p">):</span>
@@ -2809,7 +2813,7 @@ In&nbsp;[1]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">pickle</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">sympy</span>
@@ -2829,7 +2833,7 @@ In&nbsp;[4]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+<div class=" highlight hl-ipython"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">rbt</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">file</span> <span class="p">)</span>
 </pre></div>
 
@@ -2854,7 +2858,7 @@ In&nbsp;[281]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">parms_traj</span> <span class="o">=</span> <span class="s">&#39;traj1&#39;</span>
+<div class=" highlight hl-ipython"><pre><span class="n">parms_traj</span> <span class="o">=</span> <span class="s">&#39;traj1&#39;</span>
 </pre></div>
 
 </div>
@@ -2869,7 +2873,7 @@ In&nbsp;[282]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">support_funcs.regr_data_proc</span> <span class="kn">import</span> <span class="n">read_data</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">support_funcs.regr_data_proc</span> <span class="kn">import</span> <span class="n">read_data</span>
 <span class="n">t_raw</span><span class="p">,</span> <span class="n">q_raw</span><span class="p">,</span> <span class="n">tau_raw</span><span class="p">,</span> <span class="n">t_ref</span><span class="p">,</span> <span class="n">q_ref</span> <span class="o">=</span> <span class="n">read_data</span><span class="p">(</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dof</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span>
                                                 <span class="n">datafolder</span> <span class="o">+</span> <span class="s">&#39;recdata/rbtlog_</span><span class="si">%s</span><span class="s">.dat&#39;</span><span class="o">%</span><span class="k">parms_traj</span><span class="p">,</span>
                                                 <span class="n">datafolder</span> <span class="o">+</span> <span class="s">&#39;trajectories/traj1.dat&#39;</span><span class="p">)</span>
@@ -2896,7 +2900,7 @@ In&nbsp;[283]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">q_raw</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
@@ -3935,7 +3939,7 @@ In&nbsp;[284]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="n">joint</span> <span class="o">=</span> <span class="mi">7</span>
@@ -4490,7 +4494,7 @@ In&nbsp;[11]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">del</span> <span class="n">t_raw</span><span class="p">,</span> <span class="n">q_raw</span><span class="p">,</span> <span class="n">tau_raw</span><span class="p">,</span> <span class="n">t_ref</span><span class="p">,</span> <span class="n">q_ref</span>
+<div class=" highlight hl-ipython"><pre><span class="k">del</span> <span class="n">t_raw</span><span class="p">,</span> <span class="n">q_raw</span><span class="p">,</span> <span class="n">tau_raw</span><span class="p">,</span> <span class="n">t_ref</span><span class="p">,</span> <span class="n">q_ref</span>
 </pre></div>
 
 </div>
@@ -4514,7 +4518,7 @@ In&nbsp;[12]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span>  <span class="s">&#39;trajectories/</span><span class="si">%s</span><span class="s">_shwfl_abq0.pkl&#39;</span><span class="o">%</span><span class="k">parms_traj</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+<div class=" highlight hl-ipython"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span>  <span class="s">&#39;trajectories/</span><span class="si">%s</span><span class="s">_shwfl_abq0.pkl&#39;</span><span class="o">%</span><span class="k">parms_traj</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">s_h_wf_l</span><span class="p">,</span> <span class="n">a_b_q0</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
 
 <span class="k">print</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">((</span><span class="s">&#39;S&#39;</span><span class="p">,</span> <span class="s">&#39;h&#39;</span><span class="p">,</span> <span class="s">&#39;wf&#39;</span><span class="p">,</span> <span class="s">&#39;L&#39;</span><span class="p">),</span> <span class="n">s_h_wf_l</span><span class="p">)))</span>
@@ -4560,7 +4564,7 @@ In&nbsp;[14]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">fc_mult</span> <span class="o">=</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython"><pre><span class="n">fc_mult</span> <span class="o">=</span> <span class="mi">10</span>
 </pre></div>
 
 </div>
@@ -4575,7 +4579,7 @@ In&nbsp;[15]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">wf</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s_h_wf_l</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<div class=" highlight hl-ipython"><pre><span class="n">wf</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s_h_wf_l</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">L</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s_h_wf_l</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">fc</span> <span class="o">=</span> <span class="n">fc_mult</span> <span class="o">*</span> <span class="p">(</span> <span class="n">wf</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="n">L</span> <span class="p">)</span>
 <span class="n">fc</span>
@@ -4612,7 +4616,7 @@ In&nbsp;[16]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">fc_q</span> <span class="o">=</span> <span class="n">fc</span>
+<div class=" highlight hl-ipython"><pre><span class="n">fc_q</span> <span class="o">=</span> <span class="n">fc</span>
 <span class="n">fc_dq</span> <span class="o">=</span> <span class="n">fc</span>
 <span class="n">fc_ddq</span> <span class="o">=</span> <span class="n">fc</span>
 
@@ -4643,7 +4647,7 @@ In&nbsp;[24]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">rec_h</span> <span class="o">=</span> <span class="mf">0.001</span>
+<div class=" highlight hl-ipython"><pre><span class="n">rec_h</span> <span class="o">=</span> <span class="mf">0.001</span>
 </pre></div>
 
 </div>
@@ -4658,7 +4662,7 @@ In&nbsp;[22]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">support_funcs.regr_data_proc</span> <span class="kn">import</span> <span class="n">read_data</span><span class="p">,</span> <span class="n">diff_and_filt_data</span><span class="p">,</span> <span class="n">gen_regr_matrices</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">support_funcs.regr_data_proc</span> <span class="kn">import</span> <span class="n">read_data</span><span class="p">,</span> <span class="n">diff_and_filt_data</span><span class="p">,</span> <span class="n">gen_regr_matrices</span>
 
 <span class="k">def</span> <span class="nf">process_regression_data</span><span class="p">(</span><span class="n">traj_name</span><span class="p">):</span>
     <span class="n">t_raw</span><span class="p">,</span> <span class="n">q_raw</span><span class="p">,</span> <span class="n">tau_raw</span><span class="p">,</span> <span class="n">t_ref</span><span class="p">,</span> <span class="n">q_ref</span> <span class="o">=</span> <span class="n">read_data</span><span class="p">(</span><span class="n">dof</span><span class="o">=</span><span class="n">rbt</span><span class="o">.</span><span class="n">dof</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="n">rec_h</span><span class="p">,</span>
@@ -4692,7 +4696,7 @@ In&nbsp;[34]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">support_funcs.utils</span> <span class="kn">import</span> <span class="n">_fprint</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">support_funcs.utils</span> <span class="kn">import</span> <span class="n">_fprint</span>
 
 <span class="k">for</span> <span class="n">traj</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&#39;traj1&#39;</span><span class="p">,</span> <span class="s">&#39;traj2&#39;</span><span class="p">,</span> <span class="s">&#39;traj3&#39;</span><span class="p">,</span> <span class="s">&#39;traj4&#39;</span><span class="p">]:</span>
     <span class="n">_fprint</span><span class="p">(</span><span class="s">&#39;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; </span><span class="si">%s</span><span class="s"> proc &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&#39;</span><span class="o">%</span><span class="k">traj</span><span class="p">)</span>
@@ -4774,7 +4778,7 @@ In&nbsp;[285]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">raw</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;procdata/traj1_raw.npz&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">raw</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;procdata/traj1_raw.npz&#39;</span><span class="p">)</span>
 <span class="n">tau_raw</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="s">&#39;tau&#39;</span><span class="p">]</span>
 <span class="n">q_raw</span> <span class="o">=</span> <span class="n">raw</span><span class="p">[</span><span class="s">&#39;q&#39;</span><span class="p">]</span>
 <span class="k">del</span> <span class="n">raw</span>
@@ -4798,7 +4802,7 @@ In&nbsp;[286]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="n">joint</span> <span class="o">=</span> <span class="mi">1</span>
@@ -5195,7 +5199,7 @@ In&nbsp;[287]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">del</span> <span class="n">t</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">dq</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">q_raw</span><span class="p">,</span> <span class="n">tau_raw</span>
+<div class=" highlight hl-ipython"><pre><span class="k">del</span> <span class="n">t</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">dq</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">q_raw</span><span class="p">,</span> <span class="n">tau_raw</span>
 </pre></div>
 
 </div>
@@ -5219,7 +5223,7 @@ In&nbsp;[55]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">pickle</span>
 <span class="kn">import</span> <span class="nn">sympy</span>
 <span class="kn">import</span> <span class="nn">numpy</span>
@@ -5244,7 +5248,7 @@ In&nbsp;[56]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+<div class=" highlight hl-ipython"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">rbt</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">file</span> <span class="p">)</span>
 </pre></div>
 
@@ -5260,7 +5264,7 @@ In&nbsp;[85]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">epsilon_safemargin</span> <span class="o">=</span> <span class="mf">1e-6</span>
+<div class=" highlight hl-ipython"><pre><span class="n">epsilon_safemargin</span> <span class="o">=</span> <span class="mf">1e-6</span>
 <span class="n">epsilon_sdptol</span> <span class="o">=</span> <span class="mf">1e-7</span>
 </pre></div>
 
@@ -5285,7 +5289,7 @@ In&nbsp;[57]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dof</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dof</span>
+<div class=" highlight hl-ipython"><pre><span class="n">dof</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dof</span>
 
 <span class="n">delta</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">dynparms</span>
 <span class="n">n_delta</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">n_dynparms</span>
@@ -5314,7 +5318,7 @@ In&nbsp;[58]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">support_funcs.utils</span> <span class="kn">import</span> <span class="n">skew</span><span class="p">,</span> <span class="n">mrepl</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">support_funcs.utils</span> <span class="kn">import</span> <span class="n">skew</span><span class="p">,</span> <span class="n">mrepl</span>
 <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">BlockMatrix</span><span class="p">,</span> <span class="n">Matrix</span><span class="p">,</span> <span class="n">eye</span><span class="p">,</span> <span class="n">Identity</span>
 <span class="n">I</span> <span class="o">=</span> <span class="n">Identity</span>
 <span class="n">S</span> <span class="o">=</span> <span class="n">skew</span>
@@ -5332,7 +5336,7 @@ In&nbsp;[59]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">D_inertia_blocks</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">D_inertia_blocks</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dof</span><span class="p">):</span>
     <span class="n">L</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">rbtdef</span><span class="o">.</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">l</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">rbtdef</span><span class="o">.</span><span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -5354,7 +5358,7 @@ In&nbsp;[288]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">D_inertia_blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">D_inertia_blocks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -5386,7 +5390,7 @@ In&nbsp;[61]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">D_other_blocks</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">D_other_blocks</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dof</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">rbt</span><span class="o">.</span><span class="n">rbtdef</span><span class="o">.</span><span class="n">driveinertiamodel</span> <span class="o">==</span> <span class="s">&#39;simplified&#39;</span><span class="p">:</span>
         <span class="n">D_other_blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">Matrix</span><span class="p">([</span><span class="n">rbt</span><span class="o">.</span><span class="n">rbtdef</span><span class="o">.</span><span class="n">Ia</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span> <span class="p">)</span>
@@ -5408,7 +5412,7 @@ In&nbsp;[62]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">D_blocks</span> <span class="o">=</span> <span class="n">D_inertia_blocks</span> <span class="o">+</span> <span class="n">D_other_blocks</span>
+<div class=" highlight hl-ipython"><pre><span class="n">D_blocks</span> <span class="o">=</span> <span class="n">D_inertia_blocks</span> <span class="o">+</span> <span class="n">D_other_blocks</span>
 </pre></div>
 
 </div>
@@ -5423,7 +5427,7 @@ In&nbsp;[289]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">D_blocks</span>
+<div class=" highlight hl-ipython"><pre><span class="n">D_blocks</span>
 </pre></div>
 
 </div>
@@ -5464,7 +5468,7 @@ In&nbsp;[83]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">varchange_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">Pb</span><span class="o">.</span><span class="n">T</span><span class="o">*</span><span class="n">delta</span> <span class="p">,</span>  <span class="n">beta_symbs</span> <span class="o">-</span> <span class="p">(</span> <span class="n">beta</span> <span class="o">-</span> <span class="n">Pb</span><span class="o">.</span><span class="n">T</span><span class="o">*</span><span class="n">delta</span> <span class="p">)))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">varchange_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">Pb</span><span class="o">.</span><span class="n">T</span><span class="o">*</span><span class="n">delta</span> <span class="p">,</span>  <span class="n">beta_symbs</span> <span class="o">-</span> <span class="p">(</span> <span class="n">beta</span> <span class="o">-</span> <span class="n">Pb</span><span class="o">.</span><span class="n">T</span><span class="o">*</span><span class="n">delta</span> <span class="p">)))</span>
 </pre></div>
 
 </div>
@@ -5479,7 +5483,7 @@ In&nbsp;[84]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_blocks</span> <span class="o">=</span> <span class="p">[</span><span class="n">mrepl</span><span class="p">(</span><span class="n">Di</span><span class="p">,</span> <span class="n">varchange_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">Di</span> <span class="ow">in</span> <span class="n">D_blocks</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_blocks</span> <span class="o">=</span> <span class="p">[</span><span class="n">mrepl</span><span class="p">(</span><span class="n">Di</span><span class="p">,</span> <span class="n">varchange_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">Di</span> <span class="ow">in</span> <span class="n">D_blocks</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -5503,7 +5507,7 @@ In&nbsp;[86]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">lmi_sdp</span> <span class="kn">import</span> <span class="n">LMI_PD</span><span class="p">,</span> <span class="n">LMI</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">lmi_sdp</span> <span class="kn">import</span> <span class="n">LMI_PD</span><span class="p">,</span> <span class="n">LMI</span>
 </pre></div>
 
 </div>
@@ -5518,7 +5522,7 @@ In&nbsp;[87]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_LMIs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">LMI_PD</span><span class="p">,</span> <span class="n">DB_blocks</span><span class="p">))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_LMIs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">LMI_PD</span><span class="p">,</span> <span class="n">DB_blocks</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -5533,7 +5537,7 @@ In&nbsp;[290]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_LMIs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_LMIs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -5565,7 +5569,7 @@ In&nbsp;[89]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_LMIs_marg</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lm</span><span class="p">:</span> <span class="n">LMI</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">epsilon_safemargin</span><span class="o">*</span><span class="n">eye</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="p">,</span> <span class="n">DB_blocks</span><span class="p">))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_LMIs_marg</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lm</span><span class="p">:</span> <span class="n">LMI</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">epsilon_safemargin</span><span class="o">*</span><span class="n">eye</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="p">,</span> <span class="n">DB_blocks</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -5580,7 +5584,7 @@ In&nbsp;[291]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_LMIs_marg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_LMIs_marg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -5612,7 +5616,7 @@ In&nbsp;[292]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_LMIs_marg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">canonical</span><span class="p">()</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_LMIs_marg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">canonical</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -5662,7 +5666,7 @@ In&nbsp;[93]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">sdpa</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">sdpa</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
     <span class="n">sdpadat</span> <span class="o">=</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">to_sdpa_sparse</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;sdpa_dat/sdp.dat-s&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sdpadat</span><span class="p">)</span>
@@ -5696,7 +5700,7 @@ In&nbsp;[77]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">csdp</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">csdp</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
     <span class="n">sdpadat</span> <span class="o">=</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">to_sdpa_sparse</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;sdpa_dat/sdp.dat-s&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sdpadat</span><span class="p">)</span>
@@ -5730,7 +5734,7 @@ In&nbsp;[78]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">dsdp5</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">dsdp5</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
     <span class="n">sdpadat</span> <span class="o">=</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">to_sdpa_sparse</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;sdpa_dat/sdp.dat-s&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sdpadat</span><span class="p">)</span>
@@ -5764,7 +5768,7 @@ In&nbsp;[142]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">cvxopt_dsdp5</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">cvxopt_dsdp5</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">cvxopt.solvers</span>
     <span class="n">c</span><span class="p">,</span> <span class="n">Gs</span><span class="p">,</span> <span class="n">hs</span> <span class="o">=</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">to_cvxopt</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">)</span>
     <span class="n">cvxopt</span><span class="o">.</span><span class="n">solvers</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s">&#39;DSDP_GapTolerance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">epsilon_sdptol</span>
@@ -5797,7 +5801,7 @@ In&nbsp;[143]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">cvxopt_conelp</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">cvxopt_conelp</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">cvxopt.solvers</span>
     <span class="n">c</span><span class="p">,</span> <span class="n">Gs</span><span class="p">,</span> <span class="n">hs</span> <span class="o">=</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">to_cvxopt</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">)</span>
     <span class="n">cvxopt</span><span class="o">.</span><span class="n">solvers</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s">&#39;feastol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">epsilon_sdptol</span>
@@ -5831,7 +5835,7 @@ In&nbsp;[156]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">sdpa_file</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">sdpa_file</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">):</span>
     <span class="n">sdpadat</span> <span class="o">=</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">to_sdpa_sparse</span><span class="p">(</span><span class="n">objf</span><span class="p">,</span> <span class="n">lmis</span><span class="p">,</span> <span class="n">variables</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;sdpa_dat/sdpa_input.dat-s&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sdpadat</span><span class="p">)</span>
@@ -5869,7 +5873,7 @@ In&nbsp;[153]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">solve_sdp</span> <span class="o">=</span> <span class="n">dsdp5</span>
+<div class=" highlight hl-ipython"><pre><span class="n">solve_sdp</span> <span class="o">=</span> <span class="n">dsdp5</span>
 </pre></div>
 
 </div>
@@ -5893,7 +5897,7 @@ In&nbsp;[122]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">indentification_traj</span> <span class="o">=</span> <span class="s">&#39;traj1&#39;</span>
+<div class=" highlight hl-ipython"><pre><span class="n">indentification_traj</span> <span class="o">=</span> <span class="s">&#39;traj1&#39;</span>
 </pre></div>
 
 </div>
@@ -5908,7 +5912,7 @@ In&nbsp;[97]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">regr_mats</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;procdata/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_regr.npz&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">regr_mats</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;procdata/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_regr.npz&#39;</span><span class="p">)</span>
 <span class="n">W</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">regr_mats</span><span class="p">[</span><span class="s">&#39;W&#39;</span><span class="p">])</span>
 <span class="n">omega</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">regr_mats</span><span class="p">[</span><span class="s">&#39;omega&#39;</span><span class="p">])</span>
 <span class="n">R1</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">regr_mats</span><span class="p">[</span><span class="s">&#39;R1&#39;</span><span class="p">])</span>
@@ -5927,7 +5931,7 @@ In&nbsp;[125]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">omega</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dof</span>
+<div class=" highlight hl-ipython"><pre><span class="n">omega</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dof</span>
 </pre></div>
 
 </div>
@@ -5961,7 +5965,7 @@ In&nbsp;[126]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">W</span><span class="o">.</span><span class="n">shape</span>
+<div class=" highlight hl-ipython"><pre><span class="n">W</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
 </div>
@@ -5995,7 +5999,7 @@ In&nbsp;[127]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">cond</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">cond</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6029,7 +6033,7 @@ In&nbsp;[130]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="o">%</span><span class="k">time</span> <span class="n">beta_ols</span> <span class="o">=</span> <span class="p">(</span><span class="n">R1</span><span class="o">.</span><span class="n">T</span> <span class="o">*</span> <span class="n">R1</span><span class="p">)</span><span class="o">.</span><span class="n">I</span> <span class="o">*</span> <span class="n">R1</span><span class="o">.</span><span class="n">T</span> <span class="o">*</span> <span class="n">rho1</span>
+<div class=" highlight hl-ipython"><pre><span class="o">%</span><span class="k">time</span> <span class="n">beta_ols</span> <span class="o">=</span> <span class="p">(</span><span class="n">R1</span><span class="o">.</span><span class="n">T</span> <span class="o">*</span> <span class="n">R1</span><span class="p">)</span><span class="o">.</span><span class="n">I</span> <span class="o">*</span> <span class="n">R1</span><span class="o">.</span><span class="n">T</span> <span class="o">*</span> <span class="n">rho1</span>
 </pre></div>
 
 </div>
@@ -6061,7 +6065,7 @@ In&nbsp;[131]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_ols.dat&#39;</span><span class="p">,</span> <span class="n">beta_ols</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_ols.dat&#39;</span><span class="p">,</span> <span class="n">beta_ols</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6076,7 +6080,7 @@ In&nbsp;[132]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">rho2_norm_sqr</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">omega</span> <span class="o">-</span> <span class="n">W</span> <span class="o">*</span> <span class="n">beta_ols</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+<div class=" highlight hl-ipython"><pre><span class="n">rho2_norm_sqr</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">omega</span> <span class="o">-</span> <span class="n">W</span> <span class="o">*</span> <span class="n">beta_ols</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 
 </div>
@@ -6100,7 +6104,7 @@ In&nbsp;[106]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_ols</span><span class="p">))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_ols</span><span class="p">))</span>
 <span class="n">lmis_ols_bpft</span> <span class="o">=</span> <span class="p">[</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">LMI_PD</span><span class="p">(</span><span class="n">mrepl</span><span class="p">(</span><span class="n">lmi</span><span class="o">.</span><span class="n">canonical</span><span class="p">()</span><span class="o">.</span><span class="n">gts</span><span class="p">,</span> <span class="n">dict_subs</span><span class="p">))</span> <span class="k">for</span> <span class="n">lmi</span> <span class="ow">in</span> <span class="n">DB_LMIs</span> <span class="p">]</span>
 </pre></div>
 
@@ -6116,7 +6120,7 @@ In&nbsp;[293]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">lmis_ols_bpft</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">lmis_ols_bpft</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -6148,7 +6152,7 @@ In&nbsp;[146]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">variables_ols_bpft</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">variables_ols_bpft</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
 <span class="n">objf_ols_bpft</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c"># no objective function - &quot;find&quot; problem</span>
 </pre></div>
 
@@ -6174,7 +6178,7 @@ In&nbsp;[314]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">sdpa_file</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span> <span class="c"># One can solve the output file at http://www.neos-server.org/neos/solvers/sdp:DSDP/SDPA.html for example.</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">sdpa_file</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span> <span class="c"># One can solve the output file at http://www.neos-server.org/neos/solvers/sdp:DSDP/SDPA.html for example.</span>
 </pre></div>
 
 </div>
@@ -6205,7 +6209,7 @@ In&nbsp;[133]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">dsdp5</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">dsdp5</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6309,7 +6313,7 @@ In&nbsp;[134]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">sdpa</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">sdpa</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6378,7 +6382,7 @@ In&nbsp;[135]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">csdp</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">csdp</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6433,7 +6437,7 @@ In&nbsp;[144]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">cvxopt_conelp</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol</span> <span class="o">=</span> <span class="n">cvxopt_conelp</span><span class="p">(</span><span class="n">objf_ols_bpft</span><span class="p">,</span> <span class="n">lmis_ols_bpft</span><span class="p">,</span> <span class="n">variables_ols_bpft</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6492,7 +6496,7 @@ In&nbsp;[155]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">)</span>
 <span class="n">U_beta</span> <span class="o">=</span> <span class="n">BlockMatrix</span><span class="p">([[</span><span class="n">Matrix</span><span class="p">([</span><span class="n">u</span><span class="p">]),</span>            <span class="p">(</span><span class="n">beta_ols</span> <span class="o">-</span> <span class="n">beta_symbs</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">],</span>
                  <span class="p">[</span><span class="n">beta_ols</span> <span class="o">-</span> <span class="n">beta_symbs</span><span class="p">,</span>                 <span class="n">I</span><span class="p">(</span><span class="n">n_beta</span><span class="p">)]])</span>
 <span class="n">U_beta</span> <span class="o">=</span> <span class="n">U_beta</span><span class="o">.</span><span class="n">as_explicit</span><span class="p">()</span>
@@ -6510,7 +6514,7 @@ In&nbsp;[148]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">lmis_ols_bpfc</span> <span class="o">=</span> <span class="p">[</span><span class="n">LMI</span><span class="p">(</span><span class="n">U_beta</span><span class="p">)]</span> <span class="o">+</span> <span class="n">DB_LMIs_marg</span>
+<div class=" highlight hl-ipython"><pre><span class="n">lmis_ols_bpfc</span> <span class="o">=</span> <span class="p">[</span><span class="n">LMI</span><span class="p">(</span><span class="n">U_beta</span><span class="p">)]</span> <span class="o">+</span> <span class="n">DB_LMIs_marg</span>
 </pre></div>
 
 </div>
@@ -6525,7 +6529,7 @@ In&nbsp;[151]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">lmis_ols_bpfc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">lmis_ols_bpfc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -6571,7 +6575,7 @@ In&nbsp;[158]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">variables_ols_bpfc</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">variables_ols_bpfc</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6586,7 +6590,7 @@ In&nbsp;[159]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">objf_ols_bpfc</span> <span class="o">=</span> <span class="n">u</span>
+<div class=" highlight hl-ipython"><pre><span class="n">objf_ols_bpfc</span> <span class="o">=</span> <span class="n">u</span>
 </pre></div>
 
 </div>
@@ -6601,7 +6605,7 @@ In&nbsp;[160]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol_ols_bpfc</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_ols_bpfc</span><span class="p">,</span> <span class="n">lmis_ols_bpfc</span><span class="p">,</span> <span class="n">variables_ols_bpfc</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol_ols_bpfc</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_ols_bpfc</span><span class="p">,</span> <span class="n">lmis_ols_bpfc</span><span class="p">,</span> <span class="n">variables_ols_bpfc</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6711,7 +6715,7 @@ In&nbsp;[161]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u_prime</span> <span class="o">=</span> <span class="n">sol_ols_bpfc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u_prime</span> <span class="o">=</span> <span class="n">sol_ols_bpfc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">beta_prime</span> <span class="o">=</span> <span class="n">sol_ols_bpfc</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="o">+</span><span class="n">n_beta</span><span class="p">]</span>
 <span class="n">delta_d_prime</span> <span class="o">=</span> <span class="n">sol_ols_bpfc</span><span class="p">[</span><span class="mi">1</span><span class="o">+</span><span class="n">n_beta</span><span class="p">:]</span>
 </pre></div>
@@ -6728,7 +6732,7 @@ In&nbsp;[162]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u_prime</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u_prime</span>
 </pre></div>
 
 </div>
@@ -6771,7 +6775,7 @@ In&nbsp;[165]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_prime</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_prime</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
 <span class="n">dict_subs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">delta_d</span><span class="p">,</span> <span class="n">delta_d_prime</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">])))</span>
 
 <span class="n">test</span> <span class="o">=</span> <span class="s">&#39;ok&#39;</span>
@@ -6812,7 +6816,7 @@ In&nbsp;[166]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_prime.dat&#39;</span><span class="p">,</span> <span class="n">beta_prime</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_prime.dat&#39;</span><span class="p">,</span> <span class="n">beta_prime</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6836,7 +6840,7 @@ In&nbsp;[167]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Symbol</span><span class="p">(</span><span class="s">&#39;u&#39;</span><span class="p">)</span>
 <span class="n">U_rho</span> <span class="o">=</span> <span class="n">BlockMatrix</span><span class="p">([[</span><span class="n">Matrix</span><span class="p">([</span><span class="n">u</span> <span class="o">-</span> <span class="n">rho2_norm_sqr</span><span class="p">]),</span> <span class="p">(</span><span class="n">rho1</span> <span class="o">-</span> <span class="n">R1</span><span class="o">*</span><span class="n">beta_symbs</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">],</span>
                      <span class="p">[</span><span class="n">rho1</span> <span class="o">-</span> <span class="n">R1</span><span class="o">*</span><span class="n">beta_symbs</span><span class="p">,</span>                       <span class="n">I</span><span class="p">(</span><span class="n">n_beta</span><span class="p">)]])</span>
 <span class="n">U_rho</span> <span class="o">=</span> <span class="n">U_rho</span><span class="o">.</span><span class="n">as_explicit</span><span class="p">()</span>
@@ -6854,7 +6858,7 @@ In&nbsp;[168]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">lmis_fbpe_ols</span> <span class="o">=</span> <span class="p">[</span><span class="n">LMI</span><span class="p">(</span><span class="n">U_rho</span><span class="p">)]</span> <span class="o">+</span> <span class="n">DB_LMIs_marg</span>
+<div class=" highlight hl-ipython"><pre><span class="n">lmis_fbpe_ols</span> <span class="o">=</span> <span class="p">[</span><span class="n">LMI</span><span class="p">(</span><span class="n">U_rho</span><span class="p">)]</span> <span class="o">+</span> <span class="n">DB_LMIs_marg</span>
 </pre></div>
 
 </div>
@@ -6869,7 +6873,7 @@ In&nbsp;[169]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">variables_fbpe_ols</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">variables_fbpe_ols</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -6884,7 +6888,7 @@ In&nbsp;[170]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">objf_fbpe_ols</span> <span class="o">=</span> <span class="n">u</span>
+<div class=" highlight hl-ipython"><pre><span class="n">objf_fbpe_ols</span> <span class="o">=</span> <span class="n">u</span>
 </pre></div>
 
 </div>
@@ -6899,7 +6903,7 @@ In&nbsp;[172]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol_fbpe_ols</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_fbpe_ols</span><span class="p">,</span> <span class="n">lmis_fbpe_ols</span><span class="p">,</span> <span class="n">variables_fbpe_ols</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol_fbpe_ols</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_fbpe_ols</span><span class="p">,</span> <span class="n">lmis_fbpe_ols</span><span class="p">,</span> <span class="n">variables_fbpe_ols</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -7003,7 +7007,7 @@ In&nbsp;[173]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u_star</span> <span class="o">=</span> <span class="n">sol_fbpe_ols</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u_star</span> <span class="o">=</span> <span class="n">sol_fbpe_ols</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">beta_star</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">sol_fbpe_ols</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="o">+</span><span class="n">n_beta</span><span class="p">])</span>
 <span class="n">delta_d_star</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">sol_fbpe_ols</span><span class="p">[</span><span class="mi">1</span><span class="o">+</span><span class="n">n_beta</span><span class="p">:])</span>
 </pre></div>
@@ -7020,7 +7024,7 @@ In&nbsp;[198]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u_star</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u_star</span>
 </pre></div>
 
 </div>
@@ -7061,7 +7065,7 @@ In&nbsp;[174]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_star</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_star</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
 <span class="n">dict_subs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">delta_d</span><span class="p">,</span> <span class="n">delta_d_star</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">])))</span>
 
 <span class="n">test</span> <span class="o">=</span> <span class="s">&#39;ok&#39;</span>
@@ -7102,7 +7106,7 @@ In&nbsp;[175]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_star.dat&#39;</span><span class="p">,</span> <span class="n">beta_star</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_star.dat&#39;</span><span class="p">,</span> <span class="n">beta_star</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -7126,7 +7130,7 @@ In&nbsp;[179]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">link_cuboid_hulls</span> <span class="o">=</span> <span class="p">[</span>
+<div class=" highlight hl-ipython"><pre><span class="n">link_cuboid_hulls</span> <span class="o">=</span> <span class="p">[</span>
 <span class="p">[[</span> <span class="o">-</span><span class="mf">0.140</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.140</span> <span class="p">],[</span> <span class="o">-</span><span class="mf">0.174</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.174</span> <span class="p">],[</span> <span class="o">-</span><span class="mf">0.084</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.346</span> <span class="p">]],</span>
 <span class="p">[[</span> <span class="o">-</span><span class="mf">0.084</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.084</span> <span class="p">],[</span> <span class="o">-</span><span class="mf">0.174</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.174</span> <span class="p">],[</span> <span class="o">-</span><span class="mf">0.084</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.170</span> <span class="p">]],</span>
 <span class="p">[[</span> <span class="o">-</span><span class="mf">0.090</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.040</span> <span class="p">],[</span> <span class="o">-</span><span class="mf">0.550</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.040</span> <span class="p">],[</span> <span class="o">-</span><span class="mf">0.045</span> <span class="p">,</span> <span class="o">+</span><span class="mf">0.045</span> <span class="p">]],</span>
@@ -7160,7 +7164,7 @@ In&nbsp;[180]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">D_add_blocks</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">D_add_blocks</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rbt</span><span class="o">.</span><span class="n">dof</span><span class="p">):</span>
     <span class="n">l</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">rbtdef</span><span class="o">.</span><span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">m</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">rbtdef</span><span class="o">.</span><span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -7193,7 +7197,7 @@ In&nbsp;[189]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_add_blocks</span> <span class="o">=</span> <span class="p">[</span> <span class="n">mrepl</span><span class="p">(</span><span class="n">Di</span><span class="p">,</span> <span class="n">varchange_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">Di</span> <span class="ow">in</span> <span class="n">D_add_blocks</span> <span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_add_blocks</span> <span class="o">=</span> <span class="p">[</span> <span class="n">mrepl</span><span class="p">(</span><span class="n">Di</span><span class="p">,</span> <span class="n">varchange_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">Di</span> <span class="ow">in</span> <span class="n">D_add_blocks</span> <span class="p">]</span>
 </pre></div>
 
 </div>
@@ -7208,7 +7212,7 @@ In&nbsp;[190]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_add_LMIs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">LMI_PD</span><span class="p">,</span> <span class="n">DB_add_blocks</span><span class="p">))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_add_LMIs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">LMI_PD</span><span class="p">,</span> <span class="n">DB_add_blocks</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -7223,7 +7227,7 @@ In&nbsp;[191]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_add_LMIs_marg</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lm</span><span class="p">:</span> <span class="n">LMI</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">epsilon_safemargin</span><span class="o">*</span><span class="n">eye</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="p">,</span> <span class="n">DB_add_blocks</span><span class="p">))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_add_LMIs_marg</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lm</span><span class="p">:</span> <span class="n">LMI</span><span class="p">(</span><span class="n">lm</span><span class="p">,</span> <span class="n">epsilon_safemargin</span><span class="o">*</span><span class="n">eye</span><span class="p">(</span><span class="n">lm</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span> <span class="p">,</span> <span class="n">DB_add_blocks</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -7238,7 +7242,7 @@ In&nbsp;[299]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_add_LMIs_marg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_add_LMIs_marg</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -7270,7 +7274,7 @@ In&nbsp;[300]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">DB_add_LMIs_marg</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">DB_add_LMIs_marg</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
 </div>
@@ -7311,7 +7315,7 @@ In&nbsp;[196]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_star</span><span class="p">))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_star</span><span class="p">))</span>
 <span class="n">lmis_star_bpft_add</span> <span class="o">=</span> <span class="p">[</span> <span class="n">lmi_sdp</span><span class="o">.</span><span class="n">LMI_PD</span><span class="p">(</span><span class="n">mrepl</span><span class="p">(</span><span class="n">lmi</span><span class="o">.</span><span class="n">canonical</span><span class="p">()</span><span class="o">.</span><span class="n">gts</span><span class="p">,</span> <span class="n">dict_subs</span><span class="p">))</span> <span class="k">for</span> <span class="n">lmi</span> <span class="ow">in</span> <span class="n">DB_add_LMIs_marg</span> <span class="p">]</span>
 <span class="n">variables_star_bpft_add</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
 <span class="n">objf_star_bpft_add</span> <span class="o">=</span> <span class="n">delta_d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -7329,7 +7333,7 @@ In&nbsp;[197]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol_star_bpft_add</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_star_bpft_add</span><span class="p">,</span> <span class="n">lmis_star_bpft_add</span><span class="p">,</span> <span class="n">variables_star_bpft_add</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol_star_bpft_add</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_star_bpft_add</span><span class="p">,</span> <span class="n">lmis_star_bpft_add</span><span class="p">,</span> <span class="n">variables_star_bpft_add</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -7440,7 +7444,7 @@ In&nbsp;[198]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">lmis_fbpe_ols_add</span> <span class="o">=</span> <span class="p">[</span><span class="n">LMI</span><span class="p">(</span><span class="n">U_rho</span><span class="p">)]</span> <span class="o">+</span> <span class="n">DB_LMIs_marg</span> <span class="o">+</span> <span class="n">DB_add_LMIs_marg</span>
+<div class=" highlight hl-ipython"><pre><span class="n">lmis_fbpe_ols_add</span> <span class="o">=</span> <span class="p">[</span><span class="n">LMI</span><span class="p">(</span><span class="n">U_rho</span><span class="p">)]</span> <span class="o">+</span> <span class="n">DB_LMIs_marg</span> <span class="o">+</span> <span class="n">DB_add_LMIs_marg</span>
 </pre></div>
 
 </div>
@@ -7455,7 +7459,7 @@ In&nbsp;[199]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">variables_fbpe_ols_add</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">variables_fbpe_ols_add</span> <span class="o">=</span> <span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">)</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">delta_d</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -7470,7 +7474,7 @@ In&nbsp;[200]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">objf_fbpe_ols_add</span> <span class="o">=</span> <span class="n">u</span>
+<div class=" highlight hl-ipython"><pre><span class="n">objf_fbpe_ols_add</span> <span class="o">=</span> <span class="n">u</span>
 </pre></div>
 
 </div>
@@ -7485,7 +7489,7 @@ In&nbsp;[201]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">sol_fbpe_ols_add</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_fbpe_ols_add</span><span class="p">,</span> <span class="n">lmis_fbpe_ols_add</span><span class="p">,</span> <span class="n">variables_fbpe_ols_add</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">sol_fbpe_ols_add</span> <span class="o">=</span> <span class="n">solve_sdp</span><span class="p">(</span><span class="n">objf_fbpe_ols_add</span><span class="p">,</span> <span class="n">lmis_fbpe_ols_add</span><span class="p">,</span> <span class="n">variables_fbpe_ols_add</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -7589,7 +7593,7 @@ In&nbsp;[202]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u_starextra</span> <span class="o">=</span> <span class="n">sol_fbpe_ols_add</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u_starextra</span> <span class="o">=</span> <span class="n">sol_fbpe_ols_add</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">beta_starextra</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">sol_fbpe_ols_add</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="o">+</span><span class="n">n_beta</span><span class="p">])</span>
 <span class="n">delta_d_starextra</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">sol_fbpe_ols_add</span><span class="p">[</span><span class="mi">1</span><span class="o">+</span><span class="n">n_beta</span><span class="p">:])</span>
 </pre></div>
@@ -7606,7 +7610,7 @@ In&nbsp;[203]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">u_starextra</span>
+<div class=" highlight hl-ipython"><pre><span class="n">u_starextra</span>
 </pre></div>
 
 </div>
@@ -7649,7 +7653,7 @@ In&nbsp;[204]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_starextra</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
+<div class=" highlight hl-ipython"><pre><span class="n">dict_subs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">beta_symbs</span><span class="p">,</span> <span class="n">beta_starextra</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
 <span class="n">dict_subs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">delta_d</span><span class="p">,</span> <span class="n">delta_d_starextra</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">0</span><span class="p">])))</span>
 
 <span class="n">test</span> <span class="o">=</span> <span class="s">&#39;ok&#39;</span>
@@ -7688,7 +7692,7 @@ In&nbsp;[205]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_starextra.dat&#39;</span><span class="p">,</span> <span class="n">beta_starextra</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">numpy</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/&#39;</span> <span class="o">+</span> <span class="n">indentification_traj</span> <span class="o">+</span> <span class="s">&#39;_beta_starextra.dat&#39;</span><span class="p">,</span> <span class="n">beta_starextra</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -7712,7 +7716,7 @@ In&nbsp;[221]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">test_mass_matrix_psd</span><span class="p">(</span><span class="n">beta_solution</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">test_mass_matrix_psd</span><span class="p">(</span><span class="n">beta_solution</span><span class="p">):</span>
     <span class="n">K</span> <span class="o">=</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">Pb</span><span class="o">.</span><span class="n">T</span> <span class="o">+</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">Kd</span> <span class="o">*</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">Pd</span><span class="o">.</span><span class="n">T</span>
     <span class="n">A</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">K</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">beta_solution</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
@@ -7759,7 +7763,7 @@ In&nbsp;[222]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">beta_ols</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/traj1_beta_ols.dat&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+<div class=" highlight hl-ipython"><pre><span class="n">beta_ols</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/traj1_beta_ols.dat&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 <span class="n">test_mass_matrix_psd</span><span class="p">(</span><span class="n">beta_ols</span><span class="p">)</span>
 </pre></div>
 
@@ -7794,7 +7798,7 @@ In&nbsp;[223]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">beta_starextra</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/traj1_beta_starextra.dat&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+<div class=" highlight hl-ipython"><pre><span class="n">beta_starextra</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/traj1_beta_starextra.dat&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 <span class="n">test_mass_matrix_psd</span><span class="p">(</span><span class="n">beta_starextra</span><span class="p">)</span>
 </pre></div>
 
@@ -7838,7 +7842,7 @@ In&nbsp;[224]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">sympybotics</span>
 <span class="kn">import</span> <span class="nn">pickle</span>
 
@@ -7858,7 +7862,7 @@ In&nbsp;[225]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+<div class=" highlight hl-ipython"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span>  <span class="s">&#39;robotmodels/wam7_model.pkl&#39;</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span> <span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
           <span class="n">rbt</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span> <span class="nb">file</span> <span class="p">)</span>
 </pre></div>
 
@@ -7874,7 +7878,7 @@ In&nbsp;[226]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">analyse</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">R1</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">analyse</span><span class="p">(</span><span class="n">W</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">R1</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
     <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">matrix</span><span class="p">,</span> <span class="n">mean</span>
     <span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="kn">import</span> <span class="n">cond</span><span class="p">,</span> <span class="n">norm</span>
     
@@ -7918,7 +7922,7 @@ In&nbsp;[227]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">trajs</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([(</span><span class="s">&#39;id&#39;</span><span class="p">,</span> <span class="s">&#39;traj1&#39;</span><span class="p">),</span>
+<div class=" highlight hl-ipython"><pre><span class="n">trajs</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([(</span><span class="s">&#39;id&#39;</span><span class="p">,</span> <span class="s">&#39;traj1&#39;</span><span class="p">),</span>
                      <span class="p">(</span><span class="s">&#39;vA&#39;</span><span class="p">,</span> <span class="s">&#39;traj2&#39;</span><span class="p">),</span>
                      <span class="p">(</span><span class="s">&#39;vB&#39;</span><span class="p">,</span> <span class="s">&#39;traj3&#39;</span><span class="p">),</span>
                      <span class="p">(</span><span class="s">&#39;vC&#39;</span><span class="p">,</span> <span class="s">&#39;traj4&#39;</span><span class="p">)])</span>
@@ -7942,7 +7946,7 @@ In&nbsp;[229]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">solutions_beta</span> <span class="o">=</span> <span class="p">{</span><span class="n">betaname</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/</span><span class="si">%s</span><span class="s">_</span><span class="si">%s</span><span class="s">.dat&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">trajs</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">],</span> <span class="n">betaname</span><span class="p">)))</span><span class="o">.</span><span class="n">T</span> <span class="k">for</span> <span class="n">betaname</span> <span class="ow">in</span> <span class="n">betas</span><span class="p">}</span>
+<div class=" highlight hl-ipython"><pre><span class="n">solutions_beta</span> <span class="o">=</span> <span class="p">{</span><span class="n">betaname</span><span class="p">:</span><span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/</span><span class="si">%s</span><span class="s">_</span><span class="si">%s</span><span class="s">.dat&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">trajs</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">],</span> <span class="n">betaname</span><span class="p">)))</span><span class="o">.</span><span class="n">T</span> <span class="k">for</span> <span class="n">betaname</span> <span class="ow">in</span> <span class="n">betas</span><span class="p">}</span>
 </pre></div>
 
 </div>
@@ -7957,7 +7961,7 @@ In&nbsp;[232]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">analysis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<div class=" highlight hl-ipython"><pre><span class="n">analysis</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">traj</span> <span class="ow">in</span> <span class="n">trajs</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">numpy.linalg</span> <span class="kn">import</span> <span class="n">cond</span>
@@ -8013,7 +8017,7 @@ In&nbsp;[233]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">prop</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s">&#39;relerr%&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython"><pre><span class="n">prop</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s">&#39;relerr%&#39;</span><span class="p">]</span>
 <span class="n">form</span> <span class="o">=</span> <span class="s">&#39;</span><span class="si">%.2f</span><span class="s">&#39;</span>
 
 <span class="n">table</span> <span class="o">=</span> <span class="n">ListTable</span><span class="p">()</span>
@@ -8052,7 +8056,7 @@ In&nbsp;[234]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">yaml</span><span class="o">,</span> <span class="nn">sympy</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">import</span> <span class="nn">yaml</span><span class="o">,</span> <span class="nn">sympy</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s">&#39;robotparams/wam7_cad.yml&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">wam7_cad</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="n">delta_cad</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">Matrix</span><span class="p">([</span><span class="n">wam7_cad</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">),</span> <span class="n">d</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">rbt</span><span class="o">.</span><span class="n">dyn</span><span class="o">.</span><span class="n">dynparms</span><span class="p">])</span>
@@ -8071,7 +8075,7 @@ In&nbsp;[271]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">form</span> <span class="o">=</span> <span class="s">&#39;</span><span class="si">%.4g</span><span class="s">&#39;</span>
+<div class=" highlight hl-ipython"><pre><span class="n">form</span> <span class="o">=</span> <span class="s">&#39;</span><span class="si">%.4g</span><span class="s">&#39;</span>
 
 <span class="kn">import</span> <span class="nn">sympy</span>
 
@@ -8129,7 +8133,7 @@ In&nbsp;[301]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">traj</span> <span class="o">=</span> <span class="s">&#39;vA&#39;</span>
+<div class=" highlight hl-ipython"><pre><span class="n">traj</span> <span class="o">=</span> <span class="s">&#39;vA&#39;</span>
 <span class="n">betaname</span> <span class="o">=</span> <span class="s">&#39;beta_starextra&#39;</span>
 </pre></div>
 
@@ -8145,7 +8149,7 @@ In&nbsp;[302]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">regr_mats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;procdata/&#39;</span> <span class="o">+</span> <span class="n">trajs</span><span class="p">[</span><span class="n">traj</span><span class="p">]</span> <span class="o">+</span> <span class="s">&#39;_regr.npz&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython"><pre><span class="n">regr_mats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;procdata/&#39;</span> <span class="o">+</span> <span class="n">trajs</span><span class="p">[</span><span class="n">traj</span><span class="p">]</span> <span class="o">+</span> <span class="s">&#39;_regr.npz&#39;</span><span class="p">)</span>
 <span class="n">W</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">regr_mats</span><span class="p">[</span><span class="s">&#39;W&#39;</span><span class="p">])</span>
 <span class="n">omega</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">regr_mats</span><span class="p">[</span><span class="s">&#39;omega&#39;</span><span class="p">])</span>
 
@@ -8169,7 +8173,7 @@ In&nbsp;[303]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">beta_solution</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/</span><span class="si">%s</span><span class="s">_</span><span class="si">%s</span><span class="s">.dat&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">trajs</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">],</span> <span class="n">betaname</span><span class="p">)))</span><span class="o">.</span><span class="n">T</span>
+<div class=" highlight hl-ipython"><pre><span class="n">beta_solution</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">tmpfolder</span> <span class="o">+</span> <span class="s">&#39;solutions/</span><span class="si">%s</span><span class="s">_</span><span class="si">%s</span><span class="s">.dat&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">trajs</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">],</span> <span class="n">betaname</span><span class="p">)))</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
 </div>
@@ -8184,7 +8188,7 @@ In&nbsp;[304]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">tau</span> <span class="o">=</span> <span class="n">tau_raw</span>
+<div class=" highlight hl-ipython"><pre><span class="n">tau</span> <span class="o">=</span> <span class="n">tau_raw</span>
 </pre></div>
 
 </div>
@@ -8199,7 +8203,7 @@ In&nbsp;[305]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">omega_pred</span> <span class="o">=</span> <span class="n">W</span> <span class="o">*</span> <span class="n">beta_solution</span>
+<div class=" highlight hl-ipython"><pre><span class="n">omega_pred</span> <span class="o">=</span> <span class="n">W</span> <span class="o">*</span> <span class="n">beta_solution</span>
 <span class="n">tau_pred</span> <span class="o">=</span> <span class="n">omega_pred</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span> <span class="n">omega_pred</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">tau</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">tau</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
 <span class="n">err_pred</span> <span class="o">=</span> <span class="n">tau</span> <span class="o">-</span> <span class="n">tau_pred</span>
 </pre></div>
@@ -8216,7 +8220,7 @@ In&nbsp;[306]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="n">joint</span> <span class="o">=</span> <span class="mi">7</span>
+<div class=" highlight hl-ipython"><pre><span class="n">joint</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">firsts</span> <span class="o">=</span> <span class="mi">20000</span>
 <span class="n">s</span><span class="o">=</span><span class="n">tau_raw</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
@@ -8233,7 +8237,7 @@ In&nbsp;[310]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<div class=" highlight hl-ipython"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
@@ -10444,7 +10448,7 @@ In&nbsp;[]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre> 
+<div class=" highlight hl-ipython"><pre> 
 </pre></div>
 
 </div>
@@ -10477,7 +10481,7 @@ In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">save_files</span><span class="p">():</span> 
+<div class=" highlight hl-ipython"><pre><span class="k">def</span> <span class="nf">save_files</span><span class="p">():</span> 
     <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Javascript</span>
     <span class="n">Javascript</span><span class="p">(</span><span class="s">&#39;IPython.notebook.save_notebook()&#39;</span><span class="p">)</span>
     
@@ -10502,7 +10506,7 @@ In&nbsp;[3]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="c">#save_files()</span>
+<div class=" highlight hl-ipython"><pre><span class="c">#save_files()</span>
 </pre></div>
 
 </div>
@@ -10517,7 +10521,7 @@ In&nbsp;[36]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="c">#!git status</span>
+<div class=" highlight hl-ipython"><pre><span class="c">#!git status</span>
 </pre></div>
 
 </div>
@@ -10532,7 +10536,7 @@ In&nbsp;[37]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="c">#!git commit -a -m &quot;Add automathic README.md file generator&quot;</span>
+<div class=" highlight hl-ipython"><pre><span class="c">#!git commit -a -m &quot;Add automathic README.md file generator&quot;</span>
 </pre></div>
 
 </div>
@@ -10547,7 +10551,7 @@ In&nbsp;[38]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre><span class="c">#!git push</span>
+<div class=" highlight hl-ipython"><pre><span class="c">#!git push</span>
 </pre></div>
 
 </div>
@@ -10562,7 +10566,7 @@ In&nbsp;[]:
 </div>
 <div class="inner_cell">
     <div class="input_area">
-<div class="highlight"><pre> 
+<div class=" highlight hl-ipython"><pre> 
 </pre></div>
 
 </div>
